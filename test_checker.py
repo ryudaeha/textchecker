@@ -10,3 +10,7 @@ class Chk(TestCase):
         chk = check()
         self.assertEqual(1,chk.check_alpha())
 
+    def test_score(self):
+        chk = check()
+        self.assertEqual(1, chk.score('123','123'))
+
