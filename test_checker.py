@@ -20,3 +20,4 @@ class Chk(TestCase):
 
     def test_length_compare_1(self):
         self.assertEqual(60,self.chk.check_len('ASD', 'DSA'))
+        self.assertEqual(0, self.chk.check_len('A', 'BB'))
